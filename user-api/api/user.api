@@ -1,0 +1,30 @@
+// api语法版本
+// syntax语法声明
+syntax = "v1"
+
+// 介绍
+info(
+	author: "songmeizi"
+	date:   "2022-01-01"
+	desc:   "api语法示例及语法说明"
+)
+
+// 请求体内容
+type (
+	UserInfoReq {
+	// 请求的参数
+		UserId int64 `json:"UserId"`
+	}
+	UserInfoResp {
+		UserId   int64  `json:"UserId"`
+		Nickname string `json:"Nickname"`
+	}
+)
+
+// 整个服务里面所有的方法
+service user-api{
+	@doc "获取用户信息" // 方法的描述信息
+	@handler userInfo  // handler对应的名称
+	// post 路由的路径 (UserInfoReq) returns (UserInfoResp)
+	post /home/pangzhi/go/src/zero-demo/user-api/api/foo (UserInfoReq) returns (UserInfoResp)
+}
