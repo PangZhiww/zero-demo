@@ -1,22 +1,20 @@
-// 初始化业务依赖 存放依赖
-
 package svc
 
 import (
+	"github.com/zeromicro/go-zero/core/stores/sqlx"
+	"zero-demo/user-api/genModel"
 	"zero-demo/user-api/internal/config"
 )
 
 type ServiceContext struct {
-	Config config.Config
-	// Kafka  kafa.Server
-	// UserModel model.UserModel
+	Config    config.Config
+	UserModel model.UserModel
 }
 
 func NewServiceContext(c config.Config) *ServiceContext {
+	sqlConn := sqlx.NewMysql(c.DB.DataSource)
 	return &ServiceContext{
-		Config: c,
-		// Kafka:     kafka.New(Kafaurl, topic),
-		// Redis:     redis.New(url, passwd),
-		// UserModel: model.NewUserModel(),
+		Config:    c,
+		UserModel: model.NewUserModel(sqlConn),
 	}
 }

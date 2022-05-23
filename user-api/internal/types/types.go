@@ -2,7 +2,7 @@
 package types
 
 type UserInfoReq struct {
-	UserId int64 `path:"userId"`
+	UserId int64 `form:"userId"`
 }
 
 type UserInfoResp struct {

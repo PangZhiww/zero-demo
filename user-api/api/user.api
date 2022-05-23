@@ -14,8 +14,8 @@ type (
 	UserInfoReq {
 		// 请求的参数
 		// UserId int64 `json:"userId"`
-		// UserId int64 `form:"userId"`
-		UserId int64 `path:"userId"`
+		UserId int64 `form:"userId"`
+		//		UserId int64 `path:"userId"`
 	}
 	UserInfoResp {
 		UserId   int64  `json:"userId"`
@@ -46,8 +46,8 @@ service user-api {
 	@handler userInfo  // handler对应的名称
 	// post 路由的路径 (UserInfoReq) returns (UserInfoResp)
 	// post /user/info (UserInfoReq) returns (UserInfoResp)
-	// get /user/info (UserInfoReq) returns (UserInfoResp)
-	post /user/info/:userId (UserInfoReq) returns (UserInfoResp)
+	get /user/info (UserInfoReq) returns (UserInfoResp)
+	//	post /user/info/:userId (UserInfoReq) returns (UserInfoResp)
 	
 	@doc "修改用户信息"
 	@handler UserUpdate
