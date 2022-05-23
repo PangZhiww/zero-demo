@@ -14,9 +14,9 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 	server.AddRoutes(
 		[]rest.Route{
 			{
-				Method:  http.MethodPost,
-				Path:    "/user/info",
-				Handler: user.UserInfoHandler(serverCtx),
+				Method:  http.MethodPost,                 // 访问的方法
+				Path:    "/user/info",                    // 访问的路径
+				Handler: user.UserInfoHandler(serverCtx), //
 			},
 			{
 				Method:  http.MethodPost,
@@ -24,6 +24,6 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 				Handler: user.UserUpdateHandler(serverCtx),
 			},
 		},
-		rest.WithPrefix("/userapi/v1"),
+		rest.WithPrefix("/userapi/v1"), // 路径的前缀
 	)
 }
