@@ -2,16 +2,16 @@
 package types
 
 type UserInfoReq struct {
-	UserId int64 `json:"UserId"`
+	UserId int64 `path:"userId"`
 }
 
 type UserInfoResp struct {
-	UserId   int64  `json:"UserId"`
+	UserId   int64  `json:"userId"`
 	Nickname string `json:"nickname"`
 }
 
 type UserUpdateReq struct {
-	UserId   int64  `json:"UserId"`
+	UserId   int64  `json:"userId"`
 	Nickname string `json:"nickname"`
 }
 
