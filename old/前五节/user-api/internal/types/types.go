@@ -7,12 +7,12 @@ type UserInfoReq struct {
 
 type UserInfoResp struct {
 	UserId   int64  `json:"UserId"`
-	Nickname string `json:"nickname"`
+	Nickname string `json:"Nickname"`
 }
 
 type UserUpdateReq struct {
 	UserId   int64  `json:"UserId"`
-	Nickname string `json:"nickname"`
+	Nickname string `json:"Nickname"`
 }
 
 type UserUpdateResp struct {

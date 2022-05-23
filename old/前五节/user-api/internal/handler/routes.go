@@ -15,7 +15,7 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 		[]rest.Route{
 			{
 				Method:  http.MethodPost,
-				Path:    "/user/info",
+				Path:    "/home/pangzhi/go/src/zero-demo/user-api/api/foo",
 				Handler: user.UserInfoHandler(serverCtx),
 			},
 			{
