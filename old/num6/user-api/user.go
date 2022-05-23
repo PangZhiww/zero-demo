@@ -18,14 +18,14 @@ func main() {
 	flag.Parse()
 
 	var c config.Config
-	conf.MustLoad(*configFile, &c)
+	conf.MustLoad(*configFile, &c) // 需要把configFile 中的内容 映射到 c
 
-	ctx := svc.NewServiceContext(c)
+	ctx := svc.NewServiceContext(c) // 方便调用依赖 初始化业务依赖 ***
 	server := rest.MustNewServer(c.RestConf)
 	defer server.Stop()
 
-	handler.RegisterHandlers(server, ctx)
+	handler.RegisterHandlers(server, ctx) // 注册路由
 
 	fmt.Printf("Starting server at %s:%d...\n", c.Host, c.Port)
-	server.Start()
+	server.Start() // 启动服务
 }

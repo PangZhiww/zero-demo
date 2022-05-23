@@ -9,16 +9,16 @@ import (
 	"zero-demo/user-api/internal/types"
 )
 
-func UserInfoHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {
+func UserUpdateHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		var req types.UserInfoReq
+		var req types.UserUpdateReq
 		if err := httpx.Parse(r, &req); err != nil {
 			httpx.Error(w, err)
 			return
 		}
 
-		l := user.NewUserInfoLogic(r.Context(), svcCtx)
-		resp, err := l.UserInfo(&req)
+		l := user.NewUserUpdateLogic(r.Context(), svcCtx)
+		resp, err := l.UserUpdate(&req)
 		if err != nil {
 			httpx.Error(w, err)
 		} else {
