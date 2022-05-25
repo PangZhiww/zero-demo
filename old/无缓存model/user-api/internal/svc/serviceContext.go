@@ -2,7 +2,7 @@ package svc
 
 import (
 	"github.com/zeromicro/go-zero/core/stores/sqlx"
-	model "zero-demo/user-api/genModel"
+	"zero-demo/user-api/genModel"
 	"zero-demo/user-api/internal/config"
 )
 
