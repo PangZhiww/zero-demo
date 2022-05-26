@@ -3,6 +3,7 @@ package user
 import (
 	"context"
 	"errors"
+	"fmt"
 
 	"zero-demo/user-api/internal/svc"
 	"zero-demo/user-api/internal/types"
@@ -49,6 +50,7 @@ func (l *UserCreateLogic) UserCreate(req *types.UserCreateReq) (resp *types.User
 		}
 		return nil
 	}); err != nil {
+		fmt.Println("err========", err)
 		return nil, errors.New("创建用户失败")
 	}
 

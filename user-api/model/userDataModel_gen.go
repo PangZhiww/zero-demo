@@ -28,15 +28,13 @@ var (
 
 type (
 	userDataModel interface {
-		TransInsert(ctx context.Context,session sqlx.Session,data *User) (sql.Result, error)
+		TransInsert(ctx context.Context, session sqlx.Session, data *UserData)(sql.Result,error)
 		Insert(ctx context.Context, data *UserData) (sql.Result, error)
 		FindOne(ctx context.Context, id int64) (*UserData, error)
 		FindOneByUserId(ctx context.Context, userId int64) (*UserData, error)
 		Update(ctx context.Context, data *UserData) error
 		Delete(ctx context.Context, id int64) error
-		// TransCtx(ctx context.Context, fn func(ctx context.Context,session sqlx.Session) error ) error
-		userData(ctx context.Context, fn func(ctx context.Context,session sqlx.Session) error ) error
-
+		// TransCtx(ctx context.Context,fn func(ctx context.Context,session sqlx.Session)error)error
 	}
 
 	defaultUserDataModel struct {
@@ -60,8 +58,7 @@ func newUserDataModel(conn sqlx.SqlConn, c cache.CacheConf) *defaultUserDataMode
 	}
 }
 
-
-func (m *defaultUserDataModel) TransInsert(ctx context.Context, session sqlx.Session, data *UserData) (sql.Result, error) {
+func (m *defaultUserDataModel) TransInsert(ctx context.Context,session sqlx.Session, data *UserData) (sql.Result, error) {
 	zeroDemoUserDataIdKey := fmt.Sprintf("%s%v", cacheZeroDemoUserDataIdPrefix, data.Id)
 	zeroDemoUserDataUserIdKey := fmt.Sprintf("%s%v", cacheZeroDemoUserDataUserIdPrefix, data.UserId)
 	ret, err := m.ExecCtx(ctx, func(ctx context.Context, conn sqlx.SqlConn) (result sql.Result, err error) {
@@ -156,10 +153,10 @@ func (m *defaultUserDataModel) tableName() string {
 	return m.table
 }
 
+// func (m *defaultUserModel) TransCtx (ctx context.Context,fn func (ctx context.Context,session sqlx.Session)error ) error {
+	
+// 	return m.TransactCtx(ctx,func(ctx context.Context, s sqlx.Session) error {
+// 		return fn(ctx,s)
+// 	})
 
-// TransCtx 暴露给logic开启事物
-func (m *defaultUserModel) TransCtx(ctx context.Context,fn func(ctx context.Context,session sqlx.Session)error)	error {
-	return m.TransactCtx(ctx,func(ctx context.Context, s sqlx.Session) error {
-		return fn(ctx,s)
-	})
-}
+// }
