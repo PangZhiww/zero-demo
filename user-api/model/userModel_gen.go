@@ -26,10 +26,12 @@ var (
 
 type (
 	userModel interface {
+		TransInsert(ctx context.Context,session sqlx.Session,data *User) (sql.Result, error)
 		Insert(ctx context.Context, data *User) (sql.Result, error)
 		FindOne(ctx context.Context, id int64) (*User, error)
 		Update(ctx context.Context, data *User) error
 		Delete(ctx context.Context, id int64) error
+		userData(ctx context.Context, fn func(ctx context.Context,session sqlx.Session) error ) error
 	}
 
 	defaultUserModel struct {
@@ -49,6 +51,16 @@ func newUserModel(conn sqlx.SqlConn, c cache.CacheConf) *defaultUserModel {
 		CachedConn: sqlc.NewConn(conn, c),
 		table:      "`user`",
 	}
+}
+
+
+func (m *defaultUserModel) TransInsert(ctx context.Context,session sqlx.Session, data *User) (sql.Result, error) {
+	zeroDemoUserIdKey := fmt.Sprintf("%s%v", cacheZeroDemoUserIdPrefix, data.Id)
+	ret, err := m.ExecCtx(ctx, func(ctx context.Context, conn sqlx.SqlConn) (result sql.Result, err error) {
+		query := fmt.Sprintf("insert into %s (%s) values (?, ?)", m.table, userRowsExpectAutoSet)
+		return session.ExecCtx(ctx, query, data.Nickname, data.Mobile)
+	}, zeroDemoUserIdKey)
+	return ret, err
 }
 
 func (m *defaultUserModel) Insert(ctx context.Context, data *User) (sql.Result, error) {
@@ -106,4 +118,11 @@ func (m *defaultUserModel) queryPrimary(ctx context.Context, conn sqlx.SqlConn, 
 
 func (m *defaultUserModel) tableName() string {
 	return m.table
+}
+
+// TransCtx 暴露给logic开启事物
+func (m *defaultUserModel) userData(ctx context.Context,fn func(ctx context.Context,session sqlx.Session)error)	error {
+	return m.TransactCtx(ctx,func(ctx context.Context, s sqlx.Session) error {
+		return fn(ctx,s)
+	})
 }

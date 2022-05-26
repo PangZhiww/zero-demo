@@ -12,10 +12,7 @@ info(
 // 请求体内容
 type (
 	UserInfoReq {
-		// 请求的参数
-		// UserId int64 `json:"userId"`
 		UserId int64 `form:"userId"`
-		//		UserId int64 `path:"userId"`
 	}
 	UserInfoResp {
 		UserId   int64  `json:"userId"`
@@ -35,6 +32,16 @@ type (
 	}
 )
 
+type (
+	userCreateReq {
+		Mobile   string `json:"mobile"`
+		Nickname string `json:"nickname"`
+	}
+	userCreateResp {
+		Flag bool `json:"flag"`
+	}
+)
+
 @server(
 	group : user
 	prefix :userapi/v1 // /userapi/v1/user/update
@@ -42,12 +49,14 @@ type (
 
 // 整个服务里面所有的方法
 service user-api {
-	@doc "获取用户信息" // 方法的描述信息
-	@handler userInfo  // handler对应的名称
-	// post 路由的路径 (UserInfoReq) returns (UserInfoResp)
-	// post /user/info (UserInfoReq) returns (UserInfoResp)
+	
+	@doc "新增用户"
+	@handler userCreate
+	post /user/create (userCreateReq) returns (userCreateResp)
+	
+	@doc "获取用户信息"
+	@handler userInfo
 	get /user/info (UserInfoReq) returns (UserInfoResp)
-	//	post /user/info/:userId (UserInfoReq) returns (UserInfoResp)
 	
 	@doc "修改用户信息"
 	@handler UserUpdate

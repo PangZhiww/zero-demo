@@ -28,11 +28,15 @@ var (
 
 type (
 	userDataModel interface {
+		TransInsert(ctx context.Context,session sqlx.Session,data *User) (sql.Result, error)
 		Insert(ctx context.Context, data *UserData) (sql.Result, error)
 		FindOne(ctx context.Context, id int64) (*UserData, error)
 		FindOneByUserId(ctx context.Context, userId int64) (*UserData, error)
 		Update(ctx context.Context, data *UserData) error
 		Delete(ctx context.Context, id int64) error
+		// TransCtx(ctx context.Context, fn func(ctx context.Context,session sqlx.Session) error ) error
+		userData(ctx context.Context, fn func(ctx context.Context,session sqlx.Session) error ) error
+
 	}
 
 	defaultUserDataModel struct {
@@ -54,6 +58,17 @@ func newUserDataModel(conn sqlx.SqlConn, c cache.CacheConf) *defaultUserDataMode
 		CachedConn: sqlc.NewConn(conn, c),
 		table:      "`user_data`",
 	}
+}
+
+
+func (m *defaultUserDataModel) TransInsert(ctx context.Context, session sqlx.Session, data *UserData) (sql.Result, error) {
+	zeroDemoUserDataIdKey := fmt.Sprintf("%s%v", cacheZeroDemoUserDataIdPrefix, data.Id)
+	zeroDemoUserDataUserIdKey := fmt.Sprintf("%s%v", cacheZeroDemoUserDataUserIdPrefix, data.UserId)
+	ret, err := m.ExecCtx(ctx, func(ctx context.Context, conn sqlx.SqlConn) (result sql.Result, err error) {
+		query := fmt.Sprintf("insert into %s (%s) values (?, ?)", m.table, userDataRowsExpectAutoSet)
+		return session.ExecCtx(ctx, query, data.UserId, data.Data)
+	}, zeroDemoUserDataIdKey, zeroDemoUserDataUserIdKey)
+	return ret, err
 }
 
 func (m *defaultUserDataModel) Insert(ctx context.Context, data *UserData) (sql.Result, error) {
@@ -139,4 +154,12 @@ func (m *defaultUserDataModel) queryPrimary(ctx context.Context, conn sqlx.SqlCo
 
 func (m *defaultUserDataModel) tableName() string {
 	return m.table
+}
+
+
+// TransCtx 暴露给logic开启事物
+func (m *defaultUserModel) TransCtx(ctx context.Context,fn func(ctx context.Context,session sqlx.Session)error)	error {
+	return m.TransactCtx(ctx,func(ctx context.Context, s sqlx.Session) error {
+		return fn(ctx,s)
+	})
 }

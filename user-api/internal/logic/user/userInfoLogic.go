@@ -3,7 +3,7 @@ package user
 import (
 	"context"
 	"errors"
-	model "zero-demo/user-api/genModel"
+	"zero-demo/user-api/model"
 
 	"zero-demo/user-api/internal/svc"
 	"zero-demo/user-api/internal/types"
