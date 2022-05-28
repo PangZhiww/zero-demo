@@ -45,6 +45,7 @@ type (
 @server(
 	group : user
 	prefix :userapi/v1 // /userapi/v1/user/update
+	middleware: TestMiddleware
 )
 
 // 整个服务里面所有的方法
@@ -52,7 +53,7 @@ service user-api {
 	
 	@doc "新增用户"
 	@handler userCreate
-	post /user/create (userCreateReq) returns (userCreateResp)
+	get /user/create (userCreateReq) returns (userCreateResp)
 	
 	@doc "获取用户信息"
 	@handler userInfo

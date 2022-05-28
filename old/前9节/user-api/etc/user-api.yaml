@@ -1,6 +1,0 @@
-Name: user-api
-Host: 0.0.0.0
-Port: 8888
-# DB的名字 要与 config.go中名字一样
-DB:
-  DataSource: root1:123456789@tcp(127.0.0.1:3306)/zero-demo?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai

@@ -3,6 +3,7 @@ package user
 import (
 	"context"
 	"errors"
+	"fmt"
 	"zero-demo/user-api/model"
 
 	"zero-demo/user-api/internal/svc"
@@ -30,6 +31,7 @@ func (l *UserInfoLogic) UserInfo(req *types.UserInfoReq) (resp *types.UserInfoRe
 
 	user, err := l.svcCtx.UserModel.FindOne(l.ctx, req.UserId)
 	if err != nil && err != model.ErrNotFound {
+		fmt.Println("Err :", err)
 		return nil, errors.New("查询数据失败")
 	}
 	if user == nil {
