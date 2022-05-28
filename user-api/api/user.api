@@ -42,6 +42,13 @@ type (
 	}
 )
 
+type (
+	userTestReq {
+	}
+	userTestResp {
+	}
+)
+
 @server(
 	group : user
 	prefix :userapi/v1 // /userapi/v1/user/update
@@ -62,4 +69,16 @@ service user-api {
 	@doc "修改用户信息"
 	@handler UserUpdate
 	post /user/update (UserUpdateReq) returns (UserUpdateResp)
+}
+
+@server(
+	group : user
+	prefix :userapi/v1
+)
+
+// 整个服务里面所有的方法
+service user-api {
+	@doc "Test"
+	@handler userTest
+	post /user/test (userTestReq) returns (userTestResp)
 }

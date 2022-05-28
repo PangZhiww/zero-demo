@@ -34,4 +34,15 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 		),
 		rest.WithPrefix("/userapi/v1"),
 	)
+
+	server.AddRoutes(
+		[]rest.Route{
+			{
+				Method:  http.MethodPost,
+				Path:    "/user/test",
+				Handler: user.UserTestHandler(serverCtx),
+			},
+		},
+		rest.WithPrefix("/userapi/v1"),
+	)
 }

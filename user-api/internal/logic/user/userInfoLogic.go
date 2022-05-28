@@ -29,6 +29,8 @@ func NewUserInfoLogic(ctx context.Context, svcCtx *svc.ServiceContext) *UserInfo
 func (l *UserInfoLogic) UserInfo(req *types.UserInfoReq) (resp *types.UserInfoResp, err error) {
 	// todo: add your logic here and delete this line
 
+	fmt.Println("user info ing")
+
 	user, err := l.svcCtx.UserModel.FindOne(l.ctx, req.UserId)
 	if err != nil && err != model.ErrNotFound {
 		fmt.Println("Err :", err)

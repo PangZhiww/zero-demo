@@ -27,3 +27,9 @@ type UserCreateReq struct {
 type UserCreateResp struct {
 	Flag bool `json:"flag"`
 }
+
+type UserTestReq struct {
+}
+
+type UserTestResp struct {
+}
