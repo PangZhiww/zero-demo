@@ -69,6 +69,7 @@ service user-api {
 	@doc "修改用户信息"
 	@handler UserUpdate
 	post /user/update (UserUpdateReq) returns (UserUpdateResp)
+
 }
 
 @server(
@@ -78,7 +79,9 @@ service user-api {
 
 // 整个服务里面所有的方法
 service user-api {
+
 	@doc "Test"
 	@handler userTest
 	post /user/test (userTestReq) returns (userTestResp)
+
 }
