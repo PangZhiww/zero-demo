@@ -1,0 +1,5 @@
+2022-05-30T11:15:26.826+08:00	info	2.4ms	d08a988762b5d7ecdb69a7303a1cab8a	7a83fa4c44428791	[HTTP] GET - 200 - /userapi/v1/user/info?userId=1 - 127.0.0.1:57904 - PostmanRuntime/7.29.0
+2022-05-30T11:15:27.801+08:00	info	1.0ms	3be677d01ffc6c2fe715dee7712d5d53	522cf4577aaa9de8	[HTTP] GET - 200 - /userapi/v1/user/info?userId=1 - 127.0.0.1:57904 - PostmanRuntime/7.29.0
+2022-05-30T11:15:28.657+08:00	info	2.5ms	1347d1218a2e6237eeed1212d2c019dc	3da91556d9e2033e	[HTTP] GET - 200 - /userapi/v1/user/info?userId=1 - 127.0.0.1:57904 - PostmanRuntime/7.29.0
+2022-05-30T11:15:29.499+08:00	info	0.8ms	3de6bed7b6f624e93e34236c9687877f	f056d8b2a9385cf5	[HTTP] GET - 200 - /userapi/v1/user/info?userId=1 - 127.0.0.1:57904 - PostmanRuntime/7.29.0
+2022-05-30T11:17:05.176+08:00	info	2.0ms	8ddc1dbfa10e4570217d7a118555b582	79106c19408d8e6a	[HTTP] GET - 200 - /userapi/v1/user/info?userId=1 - 127.0.0.1:57906 - PostmanRuntime/7.29.0

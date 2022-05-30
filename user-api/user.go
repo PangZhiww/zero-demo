@@ -29,6 +29,8 @@ func main() {
 
 	handler.RegisterHandlers(server, ctx)
 
+	// logx.DisableStat() // 禁用log stat
+
 	fmt.Printf("Starting server at %s:%d...\n", c.Host, c.Port)
 	server.Start()
 }

@@ -1,0 +1,624 @@
+2022-05-30T11:04:02.632+08:00	error	userInfoLogic.go:34 err:这是故意的
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+emmmm
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+2022-05-30T11:08:25.688+08:00	error	userInfoLogic.go:34 err:这是故意的
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+emmmm
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+2022-05-30T11:12:11.746+08:00	error	userInfoLogic.go:34 err:这是故意的
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+emmmm
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+2022-05-30T11:15:26.824+08:00	error	userInfoLogic.go:34 err:这是故意的
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+emmmm
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+2022-05-30T11:15:27.801+08:00	error	userInfoLogic.go:34 err:这是故意的
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+emmmm
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+2022-05-30T11:15:28.656+08:00	error	userInfoLogic.go:34 err:这是故意的
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+emmmm
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+2022-05-30T11:15:29.498+08:00	error	userInfoLogic.go:34 err:这是故意的
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+emmmm
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+2022-05-30T11:17:05.175+08:00	error	userInfoLogic.go:34 err:这是故意的
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571
+emmmm
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testThree
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:65
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testTwo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:61
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).testOne
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:57
+zero-demo/user-api/internal/logic/user.(*UserInfoLogic).UserInfo
+	/home/pangzhi/go/src/zero-demo/user-api/internal/logic/user/userInfoLogic.go:33
+zero-demo/user-api/internal/handler/user.UserInfoHandler.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/handler/user/userInfoHandler.go:21
+zero-demo/user-api/internal/middleware.(*TestMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/user-api/internal/middleware/testMiddleware.go:20
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+zero-demo/common/middleware.(*GlobalMiddleware).Handle.func1
+	/home/pangzhi/go/src/zero-demo/common/middleware/global.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.GunzipHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/gunziphandler.go:26
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MaxBytesHandler.func2.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/maxbyteshandler.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.MetricHandler.func1.1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/metrichandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.RecoverHandler.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/recoverhandler.go:21
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2084
+github.com/zeromicro/go-zero/rest/handler.(*timeoutHandler).ServeHTTP.func1
+	/home/pangzhi/go/pkg/mod/github.com/zeromicro/go-zero@v1.3.3/rest/handler/timeouthandler.go:79
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1571

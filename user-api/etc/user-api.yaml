@@ -1,6 +1,28 @@
 Name: user-api
 Host: 0.0.0.0
 Port: 8888
+
+# ServiceName         string `json:",optional"`                                       名字
+# Mode                string `json:",default=console,options=[console,file,volume]"`  输出到： 控制台， 文件， 卷  
+# Encoding            string `json:",default=json,options=[json,plain]"`              
+# TimeFormat          string `json:",optional"`                                       日志格式化打印 
+# Path                string `json:",default=logs"`                                   保存file的地址 
+# Level               string `json:",default=info,options=[info,error,severe]"`       等级 info<error<server
+# Compress            bool   `json:",optional"`                                       是否压缩
+# KeepDays            int    `json:",optional"`                                       保留的时常 （天）
+# StackCooldownMillis int    `json:",default=100"`                                    stat日志统计输出间隔
+
+Log:
+  ServiceName: user-api
+  Mode: file
+  Path: logs
+  Level: info
+  Encoding: plain
+  Compress: true
+  KeepDays: 30
+
+
+
 # DB的名字 要与 config.go中名字一样
 DB:
   DataSource: root1:123456789@tcp(127.0.0.1:3306)/zero-demo?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
@@ -8,3 +30,4 @@ DB:
 Cache:
   - Host: 127.0.0.1:6379
     Pass: 
+
