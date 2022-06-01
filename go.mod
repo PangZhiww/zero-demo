@@ -3,6 +3,7 @@ module zero-demo
 go 1.18
 
 require (
+	github.com/pkg/errors v0.9.1
 	github.com/zeromicro/go-zero v1.3.3
 	google.golang.org/grpc v1.46.0
 	google.golang.org/protobuf v1.28.0
@@ -34,7 +35,6 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/openzipkin/zipkin-go v0.4.0 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/prometheus/client_golang v1.11.0 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/common v0.30.0 // indirect

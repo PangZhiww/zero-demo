@@ -8,10 +8,9 @@ message GetUserInfoReq {
   int64  id = 1;
 }
 message GetUserInfoResp {
-   int64 user = 1;
+   int64 id = 1;
    string nickname = 2;
 }
-
 
 //service
 service usercenter {

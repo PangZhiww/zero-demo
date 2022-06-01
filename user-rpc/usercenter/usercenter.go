@@ -6,7 +6,7 @@ package usercenter
 import (
 	"context"
 
-	"zero-demo/user-rpc/pb"
+	"zero-demo-rpc/user-rpc/pb"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"

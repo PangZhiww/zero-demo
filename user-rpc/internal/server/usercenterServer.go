@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"zero-demo/user-rpc/internal/logic"
-	"zero-demo/user-rpc/internal/svc"
-	"zero-demo/user-rpc/pb"
+	"zero-demo-rpc/user-rpc/internal/logic"
+	"zero-demo-rpc/user-rpc/internal/svc"
+	"zero-demo-rpc/user-rpc/pb"
 )
 
 type UsercenterServer struct {
