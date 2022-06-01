@@ -3,10 +3,12 @@ package config
 import (
 	"github.com/zeromicro/go-zero/core/stores/cache"
 	"github.com/zeromicro/go-zero/rest"
+	"github.com/zeromicro/go-zero/zrpc"
 )
 
 type Config struct {
 	rest.RestConf
+	UserRpcConf zrpc.RpcClientConf
 	// config.go中的名字 要与 user-api.yaml中名字一样
 	DB struct {
 		DataSource string

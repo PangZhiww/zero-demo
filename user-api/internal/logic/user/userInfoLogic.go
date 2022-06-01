@@ -2,13 +2,10 @@ package user
 
 import (
 	"context"
-	"fmt"
-	"zero-demo/user-api/model"
-
-	"github.com/pkg/errors"
 
 	"zero-demo/user-api/internal/svc"
 	"zero-demo/user-api/internal/types"
+	"zero-demo/user-rpc/pb"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )
@@ -30,37 +27,15 @@ func NewUserInfoLogic(ctx context.Context, svcCtx *svc.ServiceContext) *UserInfo
 func (l *UserInfoLogic) UserInfo(req *types.UserInfoReq) (resp *types.UserInfoResp, err error) {
 	// todo: add your logic here and delete this line
 
-	if err := l.testOne(); err != nil {
-		logx.Errorf("err:%+v", err)
-	}
-
-	// fmt.Println("user info ing")
-	// logx.Info("user logx info ing")
-	// logx.Error("user logx error ing")
-
-	user, err := l.svcCtx.UserModel.FindOne(l.ctx, req.UserId)
-	if err != nil && err != model.ErrNotFound {
-		fmt.Println("Err :", err)
-		return nil, errors.New("查询数据失败")
-	}
-	if user == nil {
-		return nil, errors.New("用户不存在")
+	userResp, err := l.svcCtx.UserRpcClient.GetUserInfo(l.ctx, &pb.GetUserInfoReq{
+		Id: req.UserId,
+	})
+	if err != nil {
+		return nil, err
 	}
 
 	return &types.UserInfoResp{
-		UserId:   user.Id,
-		Nickname: user.Nickname,
+		UserId:   userResp.Id,
+		Nickname: userResp.Nickname,
 	}, nil
-}
-
-func (l *UserInfoLogic) testOne() error {
-	return l.testTwo()
-}
-
-func (l *UserInfoLogic) testTwo() error {
-	return l.testThree()
-}
-
-func (l *UserInfoLogic) testThree() error {
-	return errors.Wrap(errors.New("这是故意的"), "emmmm")
 }

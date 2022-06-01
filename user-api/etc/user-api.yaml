@@ -2,6 +2,12 @@ Name: user-api
 Host: 0.0.0.0
 Port: 8888
 
+UserRpcConf: 
+  Etcd:
+    Hosts:
+    - 0.0.0.0:2379
+    Key:
+
 # ServiceName         string `json:",optional"`                                       名字
 # Mode                string `json:",default=console,options=[console,file,volume]"`  输出到： 控制台， 文件， 卷  
 # Encoding            string `json:",default=json,options=[json,plain]"`              
